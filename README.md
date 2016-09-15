@@ -53,10 +53,10 @@ How to use?
 
 ```
 $ iex -S mix
-iex(1)> Cache.select(["...{namespace}...", "...{key}..."])
+iex(1)> Cache.get(["...{namespace}...", "...{key}..."])
 {:error, nil}
-iex(2)> Cache.insert(["...{namespace}...", "...{key}..."], "...{value}...")
+iex(2)> Cache.set(["...{namespace}...", "...{key}..."], "...{value}...")
 :ok
-iex(3)> Cache.select(["...{namespace}...", "...{key}..."])
+iex(3)> Cache.get(["...{namespace}...", "...{key}..."])
 {:ok, "...{value}..."}
 ```
