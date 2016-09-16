@@ -3,13 +3,13 @@ defmodule Cache.Mixfile do
 
   use Mix.Project
 
-  def application do
+  def application() do
     [
       applications: [],
     ]
   end
 
-  def deps do
+  def deps() do
     [
       {:credo, "~> 0.4"},
       {:dogma, "~> 0.1"},
@@ -17,7 +17,7 @@ defmodule Cache.Mixfile do
     ]
   end
 
-  def project do
+  def project() do
     [
       app: :cache,
       build_embedded: Mix.env == :prod,
