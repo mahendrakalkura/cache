@@ -27,7 +27,7 @@ Add `:cache` to `def deps()` in your `mix.exs`.
 def deps do
   [
     ...
-    {:cache, git: "https://github.com/mahendrakalkura/priceminister.com.git"},
+    {:cache, git: "https://github.com/mahendrakalkura/cache.git"},
     ...
   ]
 end
