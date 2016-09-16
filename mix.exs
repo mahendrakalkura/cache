@@ -5,7 +5,7 @@ defmodule Cache.Mixfile do
 
   def application do
     [
-      applications: []
+      applications: [],
     ]
   end
 
@@ -13,7 +13,7 @@ defmodule Cache.Mixfile do
     [
       {:credo, "~> 0.4"},
       {:dogma, "~> 0.1"},
-      {:exjsx, "~> 3.2"}
+      {:exjsx, "~> 3.2"},
     ]
   end
 
@@ -24,7 +24,7 @@ defmodule Cache.Mixfile do
       deps: deps(),
       elixir: "~> 1.3",
       start_permanent: Mix.env == :prod,
-      version: "0.1.0"
+      version: "0.1.0",
     ]
   end
 end
