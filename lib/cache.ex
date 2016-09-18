@@ -23,8 +23,7 @@ defmodule Cache do
   def set(key, value) do
     file = get_file(key)
     contents = JSX.encode!(value, [{:space, 1}, {:indent, 4}])
-    :ok = File.write!(file, contents, [:utf8, :write])
-    :ok
+    File.write!(file, contents, [:utf8, :write])
   end
 
   def get_file(arguments) do
