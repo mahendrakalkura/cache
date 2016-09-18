@@ -31,7 +31,7 @@ defmodule Cache do
     directory = Path.dirname(file)
     unless File.dir?(directory) do
       :ok = File.mkdir_p!(directory)
-      :ok = File.chmod!(directory, 00755)
+      :ok = File.chmod!(directory, 0o755)
     end
     file
   end
