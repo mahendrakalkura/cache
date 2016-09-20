@@ -1,11 +1,6 @@
 defmodule Cache do
   @moduledoc false
 
-  require Application
-  require File
-  require JSX
-  require Path
-
   def get(key) do
     file = get_file(key)
     case File.regular?(file) do
