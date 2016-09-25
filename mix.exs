@@ -4,9 +4,7 @@ defmodule Cache.Mixfile do
   use Mix.Project
 
   def application() do
-    [
-      applications: [],
-    ]
+    [applications: []]
   end
 
   def deps() do
