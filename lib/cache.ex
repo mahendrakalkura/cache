@@ -8,8 +8,7 @@ defmodule Cache do
         contents = File.read!(file)
         contents = JSX.decode!(contents)
         {:ok, contents}
-      false ->
-        {:error, nil}
+      false -> {:error, nil}
     end
   end
 
